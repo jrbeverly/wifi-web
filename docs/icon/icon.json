@@ -1,12 +1,16 @@
 {
-    "name": "<name>",
+    "name": "Wifi",
     "license": "Public Domain",
-    "url": "<url>",
+    "url": "https://thenounproject.com/term/wifi/1105389/",
     "author": {
-        "name": "<author>",
-        "url": "<author url>"
+        "name": "novita dian",
+        "url": "https://thenounproject.com/novitaastri2011"
     },
     "tags": [
-        "<tags>"
+        "Wifi",
+        "Computer",
+        "Network",
+        "Search",
+        "Wireless"
     ]
 }
