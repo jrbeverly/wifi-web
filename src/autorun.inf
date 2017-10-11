@@ -1,0 +1,8 @@
+[autorun]
+icon=icon.ico
+label=Wifi Web
+
+[Content]
+MusicFiles=no
+PictureFiles=no
+VideoFiles=no

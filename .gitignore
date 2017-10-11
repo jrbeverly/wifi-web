@@ -1,3 +1,5 @@
-
 # Documentation:
 docs/**/images/
+
+# Build files:
+out/

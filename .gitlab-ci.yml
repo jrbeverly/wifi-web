@@ -1,0 +1,38 @@
+image: alpine:latest
+
+# ---------------------------------------
+# Global
+# ---------------------------------------
+
+
+stages:
+  - "Build"
+  - "Deploy"
+
+# ----------------------------------------
+# Build
+# ----------------------------------------
+
+build:
+  stage: "Build"
+  script:
+    - sh build/build.sh
+  only:
+    - web
+    - master
+
+# ----------------------------------------
+# Deploy
+# ----------------------------------------
+
+deploy:
+  stage: "Deploy"
+  script:
+    - sh build/package.sh
+  artifacts:
+    expire_in: 4 weeks
+    paths:
+      - out/*
+  only:
+    - web
+    - master
