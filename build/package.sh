@@ -17,4 +17,6 @@ RELEASE="githooks-$VERSION.zip"
 #
 rm -rf "${DIR_OUT:?}"/*
 mkdir -p "$DIR_OUT"
-zip -r "$DIR_OUT/$RELEASE"  "$DIR_SRC/*"
+cd "$DIR_SRC/"
+
+zip -r "$DIR_OUT/$RELEASE" .
