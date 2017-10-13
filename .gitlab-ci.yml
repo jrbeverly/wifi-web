@@ -32,7 +32,7 @@ deploy:
   artifacts:
     expire_in: 4 weeks
     paths:
-      - out/*
+      - wifi-web*.zip
   only:
     - web
     - master
