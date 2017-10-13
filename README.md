@@ -2,7 +2,7 @@
 
 ## Summary
 
-Wifi.Web provides a method of USB and visually friendly method for providing WiFi passwords.
+Wifi.Web provides a visually friendly USB method for providing WiFi configurations.
 
 ## Description
 
