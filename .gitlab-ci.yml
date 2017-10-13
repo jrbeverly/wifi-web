@@ -17,6 +17,7 @@ build:
     - sh build/build.sh
   only:
     - web
+    - develop
     - master
 
 # ----------------------------------------
@@ -35,4 +36,5 @@ deploy:
       - wifi-web*.zip
   only:
     - web
+    - develop
     - master
