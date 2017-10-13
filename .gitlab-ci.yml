@@ -1,5 +1,3 @@
-image: alpine:latest
-
 # ---------------------------------------
 # Global
 # ---------------------------------------
@@ -14,6 +12,7 @@ stages:
 
 build:
   stage: "Build"
+  image: alpine:latest
   script:
     - sh build/build.sh
   only:
@@ -26,7 +25,9 @@ build:
 
 deploy:
   stage: "Deploy"
+  image: alpine:latest
   script:
+    - apk add -U zip
     - sh build/package.sh
   artifacts:
     expire_in: 4 weeks
