@@ -25,23 +25,7 @@ You can view a more complete version of the documentation at [viewdocs/wifi.web]
 
 ## Installation
 
-You can install Wifi.Web onto a USB stick by unzipping the most recent build. You can use the `setup.sh` or `setup.bat` file to add a name and password to the list of connections. You can do this by the following command:
-
-```bash
-./setup.sh -w <wifi> -p <password>
-```
-
-Or if you prefer to use a windows environment, you can use the provided batch file:
-
-```batch
-./setup.bat /w wifi /p password 
-```
-
-Anytime you need to update the password you can rerun the above scripts:
-
-```batch
-./setup.bat /w mywifi /p password123 
-```
+You can install Wifi.Web onto a USB stick by unzipping the most recent build. You can use the `autorun.sh` or `autorun.bat` file to open the HTML page. If autorun is possible in the environment, you will have the opporunity to open the HTML page when the USB device is connected. 
 
 ### Manual Installation or Modification
 
