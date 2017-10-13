@@ -3,3 +3,4 @@ docs/**/images/
 
 # Build files:
 out/
+*.zip

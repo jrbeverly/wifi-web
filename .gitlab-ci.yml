@@ -27,6 +27,7 @@ deploy:
   stage: "Deploy"
   image: alpine:latest
   script:
+    - apk add -U zip
     - sh build/package.sh
   artifacts:
     expire_in: 4 weeks
