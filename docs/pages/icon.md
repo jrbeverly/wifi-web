@@ -1,4 +1,4 @@
-![Project icon](icon.png)
+![Project icon](../../icon/icon.png)
 # Wifi
 By [novita dian](https://thenounproject.com/novitaastri2011), from the [Noun Project](https://thenounproject.com/term/wifi/1105389/)
 
