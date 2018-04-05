@@ -1,9 +1,15 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
 	<title>Wifi.Web</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script type="text/javascript" src="lib/angular.min.js"></script>
+	<script type="text/javascript" src="lib/clipboard.min.js"></script>
+	<script type="text/javascript" src="lib/ngclipboard.min.js"></script>
+	<script type="text/javascript" src="data/connections.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 	<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -12,34 +18,25 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 </head>
-<body class="is-loading">
-	<div id="wrapper">
+
+<body ng-app="WifiApp" class="is-loading">
+	<div id="wrapper" ng-controller="WifiController">
 		<section id="main">
 			<header>
 				<span class="avatar">
 					<img src="images/avatar.png" alt="icon" />
 				</span>
-				<h1>Wifi.Web</h1>
+				<h1>{{name}}</h1>
 			</header>
-			<div>
-				<p>Wifi #1</p>
+			<div ng-repeat="connect in connections">
+				<p>{{connect.name}}</p>
 				<ul class="icons">
 					<li>
-						<a href="#" class="fa-eye">Show</a>
+						<a href="#" class="fa-eye">{{label.show}}</a>
 					</li>
+					
 					<li>
-						<a href="#" class="fa-copy">Copy</a>
-					</li>
-				</ul>
-			</div>
-			<div>
-				<p>Wifi #2</p>
-				<ul class="icons">
-					<li>
-						<a href="#" class="fa-eye">Show</a>
-					</li>
-					<li>
-						<a href="#" class="fa-copy">Copy</a>
+						<a href="#" class="fa-copy" ngclipboard data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">{{label.copy}}</a>
 					</li>
 				</ul>
 			</div>
@@ -61,4 +58,5 @@
 		}
 	</script>
 </body>
+
 </html>
