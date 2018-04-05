@@ -245,7 +245,6 @@ textarea {
   font-weight: 300;
   line-height: 2;
   letter-spacing: 0.2em;
-  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1680px) {
@@ -284,7 +283,7 @@ a:before {
 }
 
 a:hover {
-  color: #ff7496;
+  color: #ff3b6c;
 }
 
 strong,
@@ -654,11 +653,10 @@ ul.icons li a {
   text-align: center;
   text-indent: 3.75em;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 ul.icons li a:before {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
@@ -666,15 +664,9 @@ ul.icons li a:before {
 }
 
 ul.icons li a:before {
-  color: #ffffff;
-  text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf,
-    0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+  color: #ff7496;
 }
 
-ul.icons li a:hover:before {
-  text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496,
-    0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
-}
 
 ul.icons li a:before {
   position: absolute;

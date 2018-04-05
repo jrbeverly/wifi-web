@@ -10,7 +10,9 @@
 	<script type="text/javascript" src="lib/ngclipboard.min.js"></script>
 	<script type="text/javascript" src="data/connections.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="assets/js/ui-bootstrap-tpls-0.12.0.js"></script>
 	<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/bootstrap-combined.min.css" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -28,15 +30,19 @@
 				</span>
 				<h1>{{name}}</h1>
 			</header>
+			<br/>
 			<div ng-repeat="connect in connections">
-				<p>{{connect.name}}</p>
 				<ul class="icons">
+					<h2>{{connect.name}}</h2>
 					<li>
-						<a href="#" class="fa-eye">{{label.show}}</a>
+						<a class="fa-eye" tooltip="{{connect.password}}" tooltip-placement="top"></a>
 					</li>
-					
 					<li>
-						<a href="#" class="fa-copy" ngclipboard data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">{{label.copy}}</a>
+						<a class="fa-wifi" ngclipboard data-clipboard-text="{{connect.name}}"></a>
+					</li>
+
+					<li>
+						<a class="fa-copy" ngclipboard data-clipboard-text="{{connect.password}}"></a>
 					</li>
 				</ul>
 			</div>
