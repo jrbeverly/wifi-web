@@ -2,8 +2,6 @@
 
 @import url(font-awesome.min.css);
 
-@import url(source-sans-pro.css);
-
 /*
 	Identity by HTML5 UP
 	html5up.net | @ajlkn
@@ -113,7 +111,7 @@ body.is-loading:after {
 
 body {
   color: #414f57;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 14pt;
   font-weight: 300;
   line-height: 2;
