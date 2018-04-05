@@ -18,24 +18,24 @@ You can install Wifi.Web onto a USB stick by unzipping the most recent build. Yo
 
 ### Manual Installation or Modification
 
-If you need to manually edit the connection details, you can do so with the `wifi.json` file. The file is of the format:
+If you need to manually edit the connection details, you can do so with the `js/connections.js` file. The file is of the format:
 
-```json
-{
-    "connections": [
-        {
-            "name": "wifi_2.4G",
-            "password": "password123"
-        },
-        {
-            "name": "wifi_5G",
-            "password": "123123!"
-        }
-    ]
-}
+```javascript
+exports = {
+  connections: [
+    {
+      name: "My Wifi 2.4-Ghz",
+      password: "Passw0rd!"
+    },
+    {
+      name: "My Wifi 5-Ghz",
+      password: "L337Pass"
+    }
+  ]
+};
 ```
 
-You can see an example of the file format in `data/default.json` available [here](src/data/default.json).
+You can see an example of the file format in `js/default.js` available [here](src/js/default.js).
 
 ## Acknowledgements
 
