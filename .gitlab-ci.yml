@@ -4,37 +4,28 @@
 
 stages:
   - "Build"
-  - "Deploy"
+  - "Package"
 
 # ----------------------------------------
 # Build
 # ----------------------------------------
 
-build:
+compile-site:
   stage: "Build"
   image: alpine:latest
   script:
     - sh build/build.sh
-  only:
-    - web
-    - develop
-    - master
 
 # ----------------------------------------
-# Deploy
+# Package
 # ----------------------------------------
 
-deploy:
-  stage: "Deploy"
-  image: alpine:latest
+package-as-zip:
+  stage: "Package"
+  image: kramos/alpine-zip
   script:
-    - apk add -U zip
     - sh build/package.sh
   artifacts:
     expire_in: 4 weeks
     paths:
       - wifi-web*.zip
-  only:
-    - web
-    - develop
-    - master
