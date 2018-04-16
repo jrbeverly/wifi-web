@@ -2,15 +2,9 @@
 
 ## Summary
 
-Wifi.Web provides a visually friendly USB method for providing WiFi configurations.
-
-## Description
-
 If you have a camera-enabled device, you can quickly get WiFi connection details using a service like [qifi](https://qifi.org/) to generate a QR code. Then its as simple as scanning the code and connecting.
 
 Wifi.Web provides an autorun USB for quick wi-fi connection for devices that do not easily have access to a camera. It opens an HTML page that provides easy access to the WiFi.
-
-You can view a more complete version of the documentation at [viewdocs/wifi.web](http://jrbeverly.viewdocs.io/wifi.web).
 
 ## Installation
 
