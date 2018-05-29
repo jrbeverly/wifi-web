@@ -1,21 +1,19 @@
 {
-    "title": "Wifi.Web",
-    "tagline": "Wifi.Web provides a visually friendly USB method for providing WiFi configurations.",
-    "icon": {
-        "alt": "wifi.web icon",
-        "path": "docs/icon/icon.svg"
-    },
-    "license": "MIT",
-    "badges": {
-        "git": "https://gitlab.com/jrbeverly/Wifi.Web",
-        "build": {
-            "path": "https://gitlab.com/jrbeverly/Wifi.Web/commits/master",
-            "status": "https://gitlab.com/jrbeverly/Wifi.Web/badges/master/pipeline.svg"
-        }
-    },
-    "entrypoint": "",
-    "custom": {
-        "badges": "<path_to_html>",
-        "components": []
+  "title": "Wifi.Web",
+  "tagline":
+    "Provides a visually friendly USB method for providing WiFi configurations.",
+  "icon": {
+    "alt": "wifi.web icon",
+    "path": "docs/icon/icon.svg"
+  },
+  "license": "MIT",
+  "badges": {
+    "git": "https://gitlab.com/jrbeverly/Wifi.Web",
+    "build": {
+      "path": "https://gitlab.com/jrbeverly/Wifi.Web/commits/master",
+      "status":
+        "https://gitlab.com/jrbeverly/Wifi.Web/badges/master/pipeline.svg"
     }
+  },
+  "entrypoint": ""
 }
