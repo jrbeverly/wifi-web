@@ -1,18 +1,18 @@
-# Wifi.Web
+# Wifi`.`Web
 
 ## Summary
 
-If you have a camera-enabled device, you can quickly get WiFi connection details using a service like [qifi](https://qifi.org/) to generate a QR code. Then its as simple as scanning the code and connecting.
+Wifi`.`Web provides an autorun USB for connecting to wireless access points for devices that do not have access to a camera. It opens an HTML page that provides easy access to the WiFi connection details.
 
-Wifi.Web provides an autorun USB for quick wi-fi connection for devices that do not easily have access to a camera. It opens an HTML page that provides easy access to the WiFi.
+If you have a camera-enabled device, you can scan Wifi connection details using a QR Code (or any barcode type).
 
 ## Installation
 
-You can install Wifi.Web onto a USB stick by unzipping the most recent build. You can use the `autorun.sh` or `autorun.bat` file to open the HTML page. If autorun is possible in the environment, you will have the opporunity to open the HTML page when the USB device is connected. 
+You can install Wifi`.`Web onto a USB stick by unzipping the most recent build. You can use the `autorun.sh` or `autorun.bat` file to open the HTML page. If autorun is possible in the environment (unlikely), you will have the opporunity to open the HTML page when the USB device is connected. 
 
-### Manual Installation or Modification
+### Configuration
 
-If you need to manually edit the connection details, you can do so with the `js/connections.js` file. The file is of the format:
+You need to manually edit the connection details, you can do so with the `js/connections.js` file. The file is of the format:
 
 ```javascript
 exports = {
@@ -29,7 +29,7 @@ exports = {
 };
 ```
 
-You can see an example of the file format in `js/default.js` available [here](src/js/default.js).
+You can see an example of the file format in [`js/default.js`](src/js/default.js).
 
 ## Acknowledgements
 
