@@ -1,4 +1,4 @@
-## Summary
+# Summary
 
 If you have a camera-enabled device, you can quickly get WiFi connection details using a service like [qifi](https://qifi.org/) to generate a QR code. Then its as simple as scanning the code and connecting.
 
