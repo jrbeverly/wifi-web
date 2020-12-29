@@ -1,0 +1,24 @@
+{
+  "slug": "wifi-web",
+  "namespace": "jrbeverly",
+  "status": "archived",
+  "icon": "icon.svg",
+  "license": {
+    "type": "MIT",
+    "content": "Jonathan Beverly <jrbeverly>"
+  },
+  "topics": [
+    "html",
+    "wifi",
+    "wifi-password",
+    "static-site",
+    "usb"
+  ],
+  "languages": [
+    "Batchfile",
+    "CSS",
+    "HTML",
+    "JavaScript",
+    "Shell"
+  ]
+}
