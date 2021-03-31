@@ -1,0 +1,18 @@
+slug: wifi-web
+description: Wifi Web provides an autorun USB for connecting to wireless access points for devices that do not have access to a camera
+project: workbench
+namespace:
+status: archived
+icon: icon.svg
+license:
+  type: MIT
+  content: Jonathan Beverly <jrbeverly>
+  year: 2017
+topics: |-
+  [
+    "html",
+    "wifi",
+    "wifi-password",
+    "static-site",
+    "usb"
+  ]
